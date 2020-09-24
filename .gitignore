@@ -1,0 +1,16 @@
+# OS
+.DS_STORE
+._*
+
+# Editor
+*.swp
+*.swo
+
+# Node
+node_modules/
+
+# Logs
+*.log*
+
+# Backups
+*~
