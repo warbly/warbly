@@ -1,0 +1,14 @@
+{
+  "name": "@warbly/modules",
+  "main": "index.js",
+  "homepage": "https://github.com/warbly/warbly#readme",
+  "author": "Ryan Todd Garza <ryantoddgarza@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/warbly/warbly.git"
+  },
+  "bugs": {
+    "url": "https://github.com/warbly/warbly/issues"
+  }
+}
