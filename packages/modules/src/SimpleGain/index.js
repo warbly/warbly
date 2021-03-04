@@ -1,13 +1,10 @@
-function SimpleGain(context, opts = {}) {
-  const defaults = {
-    connect: context.destination,
-    gain: 1,
-  };
-  const d = defaults;
-
+function SimpleGain(context, opts = { connect: context.destination }) {
   const gainNode = context.createGain();
-  gainNode.connect(opts.connect || d.connect);
-  gainNode.gain.value = opts.gain || d.gain;
+  gainNode.connect(opts.connect);
+
+  if (opts.gain && typeof opts.gain === 'number') {
+    gainNode.gain.value = opts.gain;
+  }
 
   return gainNode;
 }

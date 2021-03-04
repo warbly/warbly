@@ -1,21 +1,16 @@
-function SimpleOscillator(context, opts = {}) {
-  const defaults = {
-    connect: context.destination,
-  };
-  const d = defaults;
-
+function SimpleOscillator(context, opts = { connect: context.destination }) {
   const oscNode = context.createOscillator();
-  oscNode.connect(opts.connect || d.connect);
+  oscNode.connect(opts.connect);
 
-  if (opts.frequency) {
-    oscNode.frequency.setValueAtTime(opts.frequency, context.currentTime);
+  if (opts.frequency && typeof opts.frequency === 'number') {
+    oscNode.frequency.value = opts.frequency;
   }
 
-  if (opts.detune) {
-    oscNode.detune.setValueAtTime(opts.detune, context.currentTime);
+  if (opts.detune && typeof opts.detune === 'number') {
+    oscNode.detune.value = opts.detune;
   }
 
-  if (opts.type) {
+  if (opts.type && typeof opts.type === 'string') {
     oscNode.type = opts.type;
   }
 
