@@ -4,6 +4,7 @@ Warbly is a JavaScript library of audio synthesis components built for the Web A
 
 ## Packages
 
+- `@warbly/core` - Low-level core library
 - `@warbly/modules` - Reusable synthesis components
 
 ## License
