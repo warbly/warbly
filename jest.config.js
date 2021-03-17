@@ -1,4 +1,5 @@
 module.exports = {
-  testEnvironment: 'jest-environment-node',
-  transform: {},
+  transform: {
+    '^.+\\.jsx?$': 'babel-jest',
+  },
 };
