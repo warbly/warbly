@@ -1,3 +1,3 @@
-import '../../../lib/AudioContextMonkeyPatch/AudioContextMonkeyPatch.js';
+import '../lib/AudioContextMonkeyPatch/AudioContextMonkeyPatch';
 
 export { default as InterfaceParam } from './InterfaceParam';
